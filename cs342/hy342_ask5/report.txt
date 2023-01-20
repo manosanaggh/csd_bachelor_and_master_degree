@@ -1,0 +1,47 @@
+val system = ActorSystem("SimpleSystem") //dhmiourgia systhmatos actors
+val server_actor = system.actorOf(Props[Server_Actor],"Server_Actor") //dhmiourgia enos server actor apo thn Server_Actor class
+val producer = system.actorOf(Props[Producer],"Producer") //dhmiourgia enos producer-client actor apo thn Producer class
+val consumer = system.actorOf(Props[Consumer],"Consumer") //dhmiourgia enos consumer-client actor apo thn Consumer class
+  
+case class RegisterCtoT(t: Int, c: Int) //dhmiourgia ousiastika enos function gia eggrafi enos consumer se ena topic
+pou mporei na xrhsimopoihthei ws case gia epikoinwnia metaksy twn actors mesw apostolhs minimatwn
+
+case class RegisterPtoT(t: Int, p: Int) //dhmiourgia ousiastika enos function gia eggrafi enos producer se ena topic
+pou mporei na xrhsimopoihthei ws case gia epikoinwnia metaksy twn actors mesw apostolhs minimatwn
+
+case class SendPAtoT(p:Int, t: Int, a: String) //dhmiourgia ousiastika enos function gia apostoli enos arthrou apo enan procucer gia ena topic
+pou mporei na xrhsimopoihthei ws case gia epikoinwnia metaksy twn actors mesw apostolhs minimatwn
+
+//ta 7 themata pou dinw ws dikh mou epilogh 
+val newsTopics = Map(
+  1 -> "Registered to Politics news topic",
+  2 -> "Registered to Global news topic",
+  3 -> "Registered to Sports news topic",
+  4 -> "Registered to Weather news topic",
+  5 -> "Registered to Church news topic",
+  6 -> "Registered to Health news topic",
+  7 -> "Registered to Army news topic"
+)
+
+var AT:Map[Int,Array[String]] = Map() //map stin class Server_Actor pou antistoixizei ena topic se ena array apo arthra
+var PT:Map[Int,Array[Int]] = Map() //map stin class Server_Actor pou antistoixizei ena producer se ena array apo topics
+var CT:Map[Int,Array[Int]] = Map() //map stin class Server_Actor pou antistoixizei ena consumer se ena array apo topics
+var CA:Map[Int,Array[String]] = Map() //map stin class Server_Actor pou antistoixizei ena consumer se ena array apo arthra
+
+Stis classes Producer kai Consumer ginetai apostoli minimatwn ston server gia eggrafes kai apostoles arthrwn panw se topics ston server mesw ton case classes-functions panta stin receive pou
+ginetai implement apo tous actors kai diaxeirizetai ta minimata.
+
+Antistoixa stin Server_Actor class ginetai diaxeirisi twn minimatwn pou erxontai ston server kai apothikeyontai sta antistoixa maps oi procucers, consumers, arthra (dianomi arthrwn se eggegrammenous
+consumers sta topics pou ta stelnei enas procuder) mesw katallilwn elegxwn pou zitountai stin ekfwnisi kai parallila ektypwnontai analoga minimata gia na blepoume oti to programma symperiferetai swsta.
+
+
+
+
+
+
+Scalability:
+
+case ReadInputFromUser() // Ston Server Actor (pou einai panta stathera enas) zitame apo consola ston xristi na dwsei kata seira se pia topics thelei na eggrafei kai gia kathe topic 
+dhmiourgeitai enas consumer (o xristis) kai enas producer pou tou parexei ena arthro giayto to topic. Exoume loipon 1 post/second kai 1 read/second ws mia kampylh pou ayksanetai 
+grammika kata 1 kai stous dyo aksones. Ws pros to max gia 2 lepta ektelesis tha exoume peripou 120 posts kai reads kai gia 3 lepta 180. 
+

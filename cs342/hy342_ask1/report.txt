@@ -1,0 +1,187 @@
+ODHGIES
+
+To programma (me fscaf) diavazei me file management apo input arxeio (dataset), tou opoiou to onoma prepei na dwthei stin fopen (exoun meinei dika mou onomata), enan grafo kai dhmiourgei
+ta apaitoumena arxeia grafontas ta pali me file management (fprintf).
+
+To programma me to 1 thread diavazei to input file kai grafei ta 3 arxeia se mia synarthsh (1 thread), compile me -> make single.
+
+To programma me ta 2 threads diavazei to input file kai grafei ta 3 arxeia se duo synarthseis, mia gia read kai mia gia write kai twn 3 arxeiwn (2 threads), compile me -> make double.
+
+To programma me ta 3 threads diavazei to input file kai grafei ta 3 arxeia se treis synarthseis, mia gia read, mia gia write twn indegree kai outdegree kai mia gia to write tou degree (3 threads), compile me -> make tripple.
+
+To programma me ta 4 threads diavazei to input file kai grafei ta 3 arxeia se tessereis synarthseis, mia gia read, mia gia write tou indegree, mia gia write tou outdegree kai mia gia write tou degree (4 threads)
+, compile me -> make quadruple.
+
+Ta threads dhmiourgountai sth main opou metrietai kai o xronos gia tis metrhseis pou zhtountai.
+
+
+
+
+
+
+METRHSEIS
+
+Gia 1 thread:
+
+p2p dataset
+
+1h metrhsh: 23.82 sec 
+2h metrhsh: 23.30 sec
+3h metrhsh: 23.39 sec
+4h metrhsh: 23.79 sec 
+5h metrhsh: 23.44 sec 
+
+Standard deviation: 0,21
+Average deviation: 0,20 
+
+fb dataset
+
+1h metrhsh: 2.83 sec
+2h metrhsh: 2.80 sec
+3h metrhsh: 2.86 sec
+4h metrhsh: 2.78 sec 
+5h metrhsh: 2.87 sec 
+
+Standard deviation: 0,03
+Average deviation: 0,15
+
+email dataset
+
+1h metrhsh: 269.10 sec 
+2h metrhsh: 269.00 sec
+3h metrhsh: 270.71 sec 	 
+4h metrhsh: 268.08 sec
+5h metrhsh: 270.07 sec	
+
+Standard deviation: 0,91
+Average deviation: 0,81
+
+----------------
+
+Gia 2 threads:
+
+p2p dataset
+
+1h metrhsh: 23.88 sec 
+2h metrhsh: 23.30 sec
+3h metrhsh: 23.81 sec 
+4h metrhsh: 23.74 sec 
+5h metrhsh: 23.53 sec
+
+(exoume epibradynsi apo 1 se 2 threads gia to p2p dataset tis taksews twn 0,11 sec.)
+Standard deviation: 0,21
+Average deviation: 0,18
+
+fb dataset
+
+1h metrhsh: 2.92 sec
+2h metrhsh: 2.93 sec 
+3h metrhsh: 2.80 sec 
+4h metrhsh: 2.86 sec 
+5h metrhsh: 2.91 sec
+
+(exoume epibradynsi apo 1 se 2 threads gia to fb dataset tis taksews twn 0,06 sec.)
+Standard deviation: 0,04
+Average deviation: 0,04 
+
+email dataset
+
+1h metrhsh: 267.43 sec
+2h metrhsh: 265.52 sec
+3h metrhsh: 271.74 sec 
+4h metrhsh: 264.43 sec
+5h metrhsh: 268.08 sec
+
+Average speedup: exoume epitaxynsi apo 1 se 2 threads gia to email dataset tis taksews twn 1,95 sec.
+Standard deviation: 2,51
+Average deviation: 1,97
+
+-----------------
+
+Gia 3 threads:
+
+p2p dataset
+
+1h metrhsh: 24.26 sec
+2h metrhsh: 23.94 sec 
+3h metrhsh: 23.86 sec
+4h metrhsh: 23.93 sec
+5h metrhsh: 23.74 sec 
+
+(exoume epibradynsi apo 1 se 3 threads gia to p2p dataset tis taksews twn 0,39 sec.
+exoume epibradynsi apo 2 se 3 threads gia to p2p dataset tis taksews twn 0,29 sec.)
+Standard deviation: 0,17
+Average deviation: 0,12
+
+fb dataset
+
+1h metrhsh: 2.83 sec
+2h metrhsh: 2.87 sec
+3h metrhsh: 2.84 sec 
+4h metrhsh: 2.87 sec 
+5h metrhsh: 2.84 sec
+
+(exoume epibradynsi apo 1 se 3 threads gia to fb dataset tis taksews twn 0,03 sec.)
+Average speedup: exoume epitaxynsi apo 2 se 3 threads gia to fb dataset tis taksews twn 0,03 sec.
+Standard deviation: 0,01
+Average deviation: 0,01
+
+email dataset
+
+1h metrhsh: 265.90 sec
+2h metrhsh: 268.48 sec
+3h metrhsh: 268.28 sec 
+4h metrhsh: 272.18 sec
+5h metrhsh: 268.74 sec
+
+Average speedup: exoume epitaxynsi apo 1 se 3 threads gia to email dataset tis taksews twn 0,67 sec.
+(exoume epibradynsi apo 2 se 3 threads gia to email dataset tis taksews twn 1,27 sec.)
+Standard deviation: 2
+Average deviation: 1,39
+
+------------------
+
+Gia 4 threads:
+
+p2p dataset
+
+1h metrhsh: 23.29 sec
+2h metrhsh: 23.88 sec
+3h metrhsh: 23.93 sec
+4h metrhsh: 23.72 sec
+5h metrhsh: 24.13 sec
+
+(exoume epibradynsi apo 1 se 4 threads gia to p2p dataset tis taksews twn 0,24 sec.
+exoume epibradynsi apo 2 se 4 threads gia to p2p dataset tis taksews twn 0,13 sec.)
+Average speedup: exoume epitaxynsi apo 3 se 4 threads gia to p2p dataset tis taksews twn 0,15 sec.
+Standard deviation: 0,28
+Average deviation: 0,22
+
+fb dataset
+
+1h metrhsh: 2.80 sec
+2h metrhsh: 2.83 sec
+3h metrhsh: 2.81 sec
+4h metrhsh: 2.86 sec
+5h metrhsh: 2.83 sec
+
+Average speedup: exoume epitaxynsi apo 1 se 4 threads gia to fb dataset tis taksews twn 0,002 sec.
+Average speedup: exoume epitaxynsi apo 2 se 4 threads gia to fb dataset tis taksews twn 0,05 sec.
+Average speedup: exoume epitaxynsi apo 3 se 4 threads gia to fb dataset tis taksews twn 0,02 sec.
+Standard deviation: 0,02
+Average deviation: 0,01
+
+email dataset
+
+1h metrhsh: 273.91 sec
+2h metrhsh: 269.33 sec
+3h metrhsh: 270.80 sec
+4h metrhsh: 267.59 sec
+5h metrhsh: 263.18 sec
+
+Average speedup: exoume epitaxynsi apo 1 se 4 threads gia to email dataset tis taksews twn 0,43 sec.
+(exoume epibradynsi apo 2 se 4 threads gia to email dataset tis taksews twn 1,52 sec.
+exoume epibradynsi apo 3 se 4 threads gia to email dataset tis taksews twn 0,24 sec.)
+Standard deviation: 3,55 
+Average deviation: 2,86
+

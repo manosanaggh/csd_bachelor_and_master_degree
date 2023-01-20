@@ -1,0 +1,45 @@
+Exoun dhmioyrghthei ksexwristes synarthseis kai klasseis pou diaxeirizontai to dentro. H ypoloiph diaxeirish kai o parallhlismos ginetai sthn main gia na mhn yperfortwthei to programma me sunarthseis.
+Enw omws to programma douleuei swsta den mporesa na to kanw na diavazei to input apo to output.txt kai na to panwgrafei ekei.
+
+1) 
+Serial (3 simulations):
+
+real: 0.177s user: 0.2s sys: 0.032s
+real: 0.162s user: 0.208s sys: 0.016s
+
+One_thread (3 simulations):
+
+real: 0.166s user: 0.188s sys: 0.028s
+real: 0.18s user: 0.228s sys: 0.02s
+
+Two_threads (3 simulations):
+
+real: 0.194s user: 0.24s sys: 0.02s
+real: 0.216s user: 0.28s sys: 0.02s
+
+Four_threads (3 simulations):
+
+real: 0.282s user: 0.468s sys: 0.02s
+real: 0.285s user: 0.476s sys: 0.016s
+
+2)
+
+Serial (3 simulations):
+
+0.0115
+
+One_thread (3 simulations):
+
+0.023
+
+Two_threads (3 simulations):
+
+0.031
+
+Four_threads (3 simulations):
+
+0.0035
+
+
+
+

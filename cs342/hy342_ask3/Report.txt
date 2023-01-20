@@ -1,0 +1,58 @@
+Exoun dhmioyrghthei ksexwristes synarthseis kai klasseis pou diaxeirizontai to dentro. H ypoloiph diaxeirish kai o parallhlismos ginetai sthn main gia na mhn yperfortwthei to programma me sunarthseis.
+Enw omws to programma douleuei swsta den mporesa na to kanw na diavazei to input apo to output.txt kai na to panwgrafei ekei.
+
+1) 
+Serial (3 simulations):
+
+real: 0.046s user: 0.032s sys: 0.004s
+real: 0.048s user: 0.040s sys: 0.000s
+
+One_thread (3 simulations):
+
+real: 0.038s user: 0.024s sys: 0.004s
+real: 0.119s user: 0.112s sys: 0.000s
+
+Two_threads (3 simulations):
+
+real: 0.032s user: 0.028s sys: 0.016s
+real: 0.121s user: 0.152s sys: 0.000s
+
+Four_threads (3 simulations):
+
+real: 0.024s user: 0.032s sys: 0.024s
+real: 0.115s user: 0.192s sys: 0.108s
+
+Parathroume oti exoume aykshmeno overhead otan ayksanoume ton arithmo twn threads alla meiwnoume to real latency.
+
+Average speeed up from one_thread to two_threads:
+
+1 / (1-0.15+(0.15/1)) = 1
+
+Average speed up from one_thread to four_threads:
+
+1 / (1-0.36+(0.36/1)) = 1
+
+Average speed up from two_threads to four_threads:
+
+1 / (1-0.25+(0.25/1)) = 1
+
+2)
+
+Serial (3 simulations):
+
+0.001
+
+One_thread (3 simulations):
+
+0.04
+
+Two_threads (3 simulations):
+
+0.04
+
+Four_threads (3 simulations):
+
+0.04
+
+
+

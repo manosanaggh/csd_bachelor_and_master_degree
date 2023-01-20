@@ -1,0 +1,122 @@
+Den ginontai metrhseis panw sta glid1 kai glid2. Logw tou oti xreiazontai para pollh mnhmh eksaitias twn polu megalwn diastasewn tou kosmou, to programma petaei segmentation fault.
+
+Seiriako:
+
+(ordinal, in.txt, 100 generations)
+1h metrhsh: 0.128s, 0.012s user overhead, 0.048s sys overhead
+2h metrhsh: 0.152s, no user overhead, 0.068s sys overhead
+3h metrhsh: 0.126s, 0.008s user overhead, 0.052s sys overhead
+4h metrhsh: 0.151s, 0.012s user overhead, 0.056s sys overhead
+5h metrhsh: 0.124s, 0.024s user overhead, 0.032s sys overhead
+
+Average time: 0,18932
+
+(ordinal, in.txt, 1000 generations)
+1h metrhsh: 59.653s, 0.092s user overhead, 0.348s sys overhead
+2h metrhsh: 51.751s, 0.096s user overhead, 0.360s sys overhead
+3h metrhsh: 52.834s, 0.088s user overhead, 0.320s sys overhead
+4h metrhsh: 55.572s, 0.104s user overhead, 0.336s sys overhead
+5h metrhsh: 49.330s, 0.116s user overhead, 0.328s sys overhead
+
+Average time: 54,27548
+
+1 thread:
+
+(one_threaded, in.txt, 100 generations)
+1h metrhsh: 0.128s, 0.016s user overhead, 0.044s sys overhead
+2h metrhsh: 0.133s, 0.020s user overhead, 0.040s sys overhead
+3h metrhsh: 0.145s, 0.012s user overhead, 0.056s sys overhead
+4h metrhsh: 0.138s, 0.016s user overhead, 0.048s sys overhead
+5h metrhsh: 0.128s, 0.020s user overhead, 0.040s sys overhead
+
+Average time: 0.1968s
+
+(one_threaded, in.txt, 1000 generations)
+1h metrhsh: 52.351s, 0.108s user overhead, 0.348s sys overhead
+2h metrhsh: 1m12.905s, 0.116s user overhead, 0.340s sys overhead
+3h metrhsh: 53.710s, 0.112s user overhead, 0.336s sys overhead
+4h metrhsh: 1m10.647s, 0.108s user overhead, 0.344s sys overhead
+5h metrhsh: 49.468s, 0.088s user overhead, 0.360s sys overhead
+
+Average time: 60,2684s
+
+2 threads:
+
+(two_threaded, in.txt, 100 generations)
+1h metrhsh: 0.130s, 0.012s user overhead, 0.052s sys overhead
+2h metrhsh: 0.130s, 0.020s user overhead, 0.044s sys overhead
+3h metrhsh: 0.129s, 0.020s user overhead, 0.044s sys overhead
+4h metrhsh: 0.128s, 0.012s user overhead, 0.052s sys overhead
+5h metrhsh: 0.154s, 0.024s user overhead, 0.052s sys overhead
+
+Average time: 0.2006s
+
+(two_threaded, in.txt, 1000 generations)
+1h metrhsh: 40.392s, 0.100s user overhead, 0.360s sys overhead
+2h metrhsh: 45.537s, 0.116s user overhead, 0.328s sys overhead
+3h metrhsh: 44.964s, 0.124s user overhead, 0.332s sys overhead
+4h metrhsh: 47.203s, 0.100s user overhead, 0.340s sys overhead
+5h metrhsh: 43.879s, 0.100s user overhead, 0.384s sys overhead
+
+Average time: 44,8518s
+
+4 threads:
+
+(four_threaded, in.txt, 100 generations)
+1h metrhsh: 0.158s, 0.036s user overhead, 0.064s sys overhead
+2h metrhsh: 0.174s, 0.056s user overhead, 0.052s sys overhead
+3h metrhsh: 0.154s, 0.056s user overhead, 0.044s sys overhead
+4h metrhsh: 0.149s, 0.032s user overhead, 0.068s sys overhead
+5h metrhsh: 0.177s, 0.040s user overhead, 0.072s sys overhead
+
+Average time: 0.2664s
+
+(four_threaded, in.txt, 1000 generations)
+1h metrhsh: 44.438s, 0.272s user overhead, 0.440s sys overhead
+2h metrhsh: 52.364s, 0.340s user overhead, 0.364s sys overhead
+3h metrhsh: 43.655s, 0.344s user overhead, 0.368s sys overhead
+4h metrhsh: 46.087s, 0.316s user overhead, 0.404s sys overhead
+5h metrhsh: 1m0.118s, 0.300s user overhead, 0.396s sys overhead
+
+Average time: 50,0412s
+
+
+Erwthsh 1
+
+Gia 100 epanalipseis:
+
+Apo 1 se 2 threads exoume ptwsi se taxitita taksis 0,0038s.
+Apo 1 se 4 threads exoume ptwsi se taxitita taksis 0,0696s.
+Apo 2 se 4 threads exoume ptwsi se taxitita taksis 0,0658s.
+
+Gia 1000 epanalipseis:
+
+Apo 1 se 2 threads exoume veltiwsi se taxitita taksis 15,4166s.
+Apo 1 se 4 threads exoume veltiwsi se taxitita taksis 10,2272s.
+Apo 2 se 4 threads exoume ptwsi se taxitita taksis 5,1894s.
+
+Erwthsh 2
+
+Standard deviation seiriakou gia 100 generations: 0,04
+Standard deviation seiriakou gia 1000 generations: 7,9
+Standard deviation 1 thread gia 100 generations: 0,15
+Standard deviation 1 thread gia 1000 generations: 9,88
+Standard deviation 2 threads gia 100 generations: 0,03 
+Standard deviation 2 threads gia 1000 generations: 2,26
+Standard deviation 4 threads gia 100 generations: 0,26  
+Standard deviation 4 threads gia 1000 generations: 6,19   
+
+
+Erwthsh 3
+
+Parathrwntas tis metrhseis gia to seiriako kai to one_threaded vlepoume oti sta megala generations exoume auksimeno sys kai user overhead 
+opws kai auksimeno user overhead sta mikra generations giati to leitourgiko xreiazetai parapanw xrono na anathesei ta parallila processes sta diaforetika cores tou epeksergasti wste na treksoun parallila.
+
+Erwthsh 4
+Gia 100 epanalipseis:
+
+Ousiastika to parapanw overhead den kaliptetai apo to veltiwmeno run time logw ligwn epanalipsewn.
+
+Gia 1000 epanalipseis:
+
+Ta 4 threads argoun arketa, sta 1 kai 2 fenetai oti gia 1000 pleon epanalipseis pou einai arketes to kerdos se run time einai terastio se sxesi me to ameliteo xasimo se overhead.
