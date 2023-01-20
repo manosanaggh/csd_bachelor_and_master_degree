@@ -1,0 +1,48 @@
+query_1:
+
+SELECT venue_name, venue_capacity FROM `bigquery-public-data.ncaa_basketball.mbb_teams`
+WHERE turner_name = "Stanford University";
+
+query_2:
+
+SELECT count(*) count FROM `bigquery-public-data.ncaa_basketball.mbb_teams_games_sr` WHERE market = "Stanford" AND home_team = true AND season >= 2013 AND season <= 2014
+
+query_3:
+
+SELECT market, color FROM `bigquery-public-data.ncaa_basketball.team_colors`
+WHERE SUBSTR(color,1,3) in ('#ff')
+order by market
+
+query_4:
+
+SELECT count(*) count,ROUND(avg(points_game),2) average_team,ROUND(avg(opp_points_game),2) average_opponent FROM `bigquery-public-data.ncaa_basketball.mbb_teams_games_sr` WHERE market = "Stanford" AND home_team = true AND win = true AND season >= 2013 AND season <= 2017;
+
+query_5:
+
+SELECT count(*) plithos_paiktwn FROM `bigquery-public-data.ncaa_basketball.mbb_players_games_sr`,`bigquery-public-data.ncaa_basketball.mbb_teams` WHERE birthplace_city = venue_city AND birthplace_state = venue_state
+
+query_6:
+
+SELECT win_name winner,lose_name loser,win_pts winner_points,lose_pts loser_points ,win_pts-lose_pts point_difference FROM `bigquery-public-data.ncaa_basketball.mbb_historical_tournament_games` WHERE (win_pts-lose_pts) = (SELECT max(win_pts-lose_pts) FROM `bigquery-public-data.ncaa_basketball.mbb_historical_tournament_games`)
+
+query_7:
+
+SELECT ROUND((count(*) * 100)/2117,2) FROM `bigquery-public-data.ncaa_basketball.mbb_historical_tournament_games` WHERE win_seed > lose_seed
+
+query_8:
+
+SELECT a.name,opp_name,a.venue_state FROM `bigquery-public-data.ncaa_basketball.mbb_teams_games_sr`a ,`bigquery-public-data.ncaa_basketball.mbb_teams`b  WHERE EXISTS (SELECT c.color ,c.market FROM `bigquery-public-data.ncaa_basketball.team_colors`c JOIN `bigquery-public-data.ncaa_basketball.team_colors`d ON c.market = a.market AND d.market = b.market AND c.color = d.color and opp_name = b.name AND a.venue_state = b.venue_state)order by a.name
+
+query_9:
+
+
+
+query_10:
+
+
+
+query_11:
+
+
+
+ 
