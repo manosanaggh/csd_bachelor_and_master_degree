@@ -1,0 +1,827 @@
+340200501
+
+Number table: 
+64 
+3
+String table: 
+2
+
+
+Boolean table: 
+0
+User function table: 
+0
+Library function table: 
+9
+typeof
+objectcopy
+cos
+sin
+objectmemberkeys
+print
+argument
+input
+objecttotalmembers
+strtonum
+sqrt
+totalarguments
+Global table: 
+81 
+nl
+_t0
+sp
+_t1
+a
+_t2
+b
+_t3
+c
+_t4
+d
+_t5
+_t6
+_t7
+_t8
+_t9
+_t10
+_t11
+_t12
+_t13
+_t14
+_t15
+_t16
+_t17
+_t18
+_t19
+_t20
+_t21
+_t22
+_t23
+_t24
+_t25
+_t26
+_t27
+_t28
+e
+_t29
+_t30
+_t31
+_t32
+_t33
+_t34
+_t35
+_t36
+_t37
+_t38
+_t39
+_t40
+_t41
+_t42
+_t43
+_t44
+_t45
+_t46
+_t47
+_t48
+_t49
+_t50
+_t51
+_t52
+_t53
+_t54
+_t55
+_t56
+_t57
+_t58
+_t59
+_t60
+_t61
+_t62
+_t63
+_t64
+_t65
+_t66
+_t67
+Local table: 
+81 
+Formal table: 
+81 
+Symbol Table: 
+a 0 1 0 4 0 20
+b 0 1 0 6 0 21
+c 0 1 0 8 0 22
+d 0 1 0 10 0 23
+e 0 1 0 35 0 47
+typeof 0 1 0 0 4 0
+nl 0 1 0 0 0 17
+objectcopy 0 1 0 0 4 0
+cos 0 1 0 0 4 0
+sin 0 1 0 0 4 0
+sp 0 1 0 2 0 18
+objectmemberkeys 0 1 0 0 4 0
+_t0 0 0 0 1 0 17
+_t1 0 0 0 3 0 18
+_t2 0 0 0 5 0 20
+_t3 0 0 0 7 0 21
+_t4 0 0 0 9 0 22
+_t5 0 0 0 11 0 23
+_t6 0 0 0 12 0 25
+print 0 1 0 0 4 0
+_t7 0 0 0 13 0 27
+_t8 0 0 0 14 0 28
+_t9 0 0 0 15 0 28
+argument 0 1 0 0 4 0
+input 0 1 0 0 4 0
+objecttotalmembers 0 1 0 0 4 0
+_t10 0 0 0 16 0 29
+_t11 0 0 0 17 0 30
+_t12 0 0 0 18 0 30
+_t13 0 0 0 19 0 32
+_t14 0 0 0 20 0 34
+_t15 0 0 0 21 0 34
+_t16 0 0 0 22 0 34
+_t17 0 0 0 23 0 36
+_t18 0 0 0 24 0 38
+_t19 0 0 0 25 0 38
+_t20 0 0 0 26 0 38
+_t21 0 0 0 27 0 38
+_t22 0 0 0 28 0 38
+_t23 0 0 0 29 0 38
+_t24 0 164459152 0 30 0 40
+_t25 0 0 0 31 0 42
+_t26 0 0 0 32 0 43
+strtonum 0 1 0 0 4 0
+_t27 0 0 0 33 0 44
+_t28 0 0 0 34 0 45
+_t29 0 0 0 36 0 47
+_t30 0 0 0 37 0 47
+_t31 0 0 0 38 0 47
+_t32 0 0 0 39 0 47
+_t33 0 0 0 40 0 48
+_t34 0 0 0 41 0 48
+_t35 0 -1 0 42 0 48
+_t36 0 0 0 43 0 48
+_t37 0 0 0 44 0 49
+_t38 0 0 0 45 0 49
+_t39 0 0 0 46 0 50
+_t40 0 0 0 47 0 50
+_t41 0 0 0 48 0 52
+_t42 0 0 0 49 0 54
+_t43 0 0 0 50 0 54
+_t44 0 0 0 51 0 54
+_t45 0 0 0 52 0 54
+_t46 0 0 0 53 0 54
+_t47 0 0 0 54 0 56
+_t48 0 0 0 55 0 58
+_t49 0 0 0 56 0 58
+_t50 0 0 0 57 0 58
+_t51 0 0 0 58 0 58
+_t52 0 0 0 59 0 58
+_t53 0 0 0 60 0 60
+_t54 0 0 0 61 0 62
+_t55 0 0 0 62 0 62
+_t56 0 0 0 63 0 62
+_t57 0 0 0 64 0 62
+_t58 0 0 0 65 0 62
+_t59 0 0 0 66 0 64
+_t60 0 0 0 67 0 66
+_t61 0 0 0 68 0 66
+_t62 0 164780120 0 69 0 66
+_t63 0 0 0 70 0 66
+_t64 0 0 0 71 0 66
+_t65 0 0 0 72 0 66
+_t66 0 0 0 73 0 66
+_t67 0 0 0 74 0 68
+sqrt 0 1 0 0 4 0
+totalarguments 0 1 0 0 4 0
+Instructions: 
+157
+0
+result struct 1 _t0 0  0 0 0
+arg1 struct 5  0 
+ 0 0 0
+arg2 = NULL
+0
+result struct 1 nl 0  0 0 0
+arg1 struct 1 _t0 0  0 0 0
+arg2 = NULL
+0
+result struct 1 _t1 0  0 0 1
+arg1 struct 5  0   0 0 1
+arg2 = NULL
+0
+result struct 1 sp 2  0 0 1
+arg1 struct 1 _t1 0  0 0 1
+arg2 = NULL
+0
+result struct 1 _t2 3  0 0 2
+arg1 struct 4  3  0 0 0
+arg2 = NULL
+0
+result struct 1 a 4  0 165015976 2
+arg1 struct 1 _t2 3  0 0 2
+arg2 = NULL
+0
+result struct 1 _t3 6  0 0 3
+arg1 struct 4  6  0 0 1
+arg2 = NULL
+0
+result struct 1 b 6  0 0 3
+arg1 struct 1 _t3 6  0 1 3
+arg2 = NULL
+0
+result struct 1 _t4 9  0 0 4
+arg1 struct 4  9  0 0 2
+arg2 = NULL
+0
+result struct 1 c 8  0 165015976 4
+arg1 struct 1 _t4 9  0 0 4
+arg2 = NULL
+0
+result struct 1 _t5 54  0 0 5
+arg1 struct 4  54  0 0 3
+arg2 = NULL
+0
+result struct 1 d 10  0 0 5
+arg1 struct 1 _t5 54  0 0 5
+arg2 = NULL
+23
+result struct 4  0  0 0 4
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 5
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 6
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 7
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 8
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  64 165015976 9
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  192 0 10
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 8 11
+arg1 = NULL
+arg2 = NULL
+17
+result struct 9 print 2.79249e-261  11 0 0
+arg1 = NULL
+arg2 = NULL
+0
+result struct 1 _t6 0  0 0 6
+arg1 struct 10  0  0 165018904 -48
+arg2 = NULL
+0
+result struct 1 _t7 4  0 0 7
+arg1 struct 4  4  108 0 12
+arg2 = NULL
+0
+result struct 1 a 4  0 0 6
+arg1 struct 1 _t7 4  0 0 7
+arg2 = NULL
+1
+result struct 1 _t8 5  0 1 8
+arg1 struct 1 a 4  0 5 7
+arg2 struct 4  5  24 -48 13
+0
+result struct 1 _t9 5  0 0 9
+arg1 struct 1 _t8 5  0 0 8
+arg2 = NULL
+0
+result struct 1 a 4  0 0 8
+arg1 struct 1 _t9 5  0 0 9
+arg2 = NULL
+0
+result struct 1 _t10 0  0 0 1
+arg1 struct 1 a 4  0 0 9
+arg2 = NULL
+0
+result struct 1 b 6  0 0 10
+arg1 struct 1 _t10 0  0 0 1
+arg2 = NULL
+1
+result struct 1 _t11 0  0 0 1
+arg1 struct 1 a 4  0 0 11
+arg2 struct 1 b 6  0 0 12
+0
+result struct 1 _t12 0  0 0 1
+arg1 struct 1 _t11 0  0 0 1
+arg2 = NULL
+0
+result struct 1 a 4  0 0 13
+arg1 struct 1 _t12 0  0 0 1
+arg2 = NULL
+23
+result struct 4  0  0 0 14
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  64 165015976 15
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  192 0 16
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 8 17
+arg1 = NULL
+arg2 = NULL
+17
+result struct 9 print 2.79249e-261  11 0 1
+arg1 = NULL
+arg2 = NULL
+0
+result struct 1 _t13 0  0 23 1
+arg1 struct 10  0  0 165018904 -48
+arg2 = NULL
+0
+result struct 1 _t14 0  0 165017688 1
+arg1 struct 1 d 10  0 0 14
+arg2 = NULL
+0
+result struct 1 c 8  0 0 15
+arg1 struct 1 _t14 0  0 0 1
+arg2 = NULL
+0
+result struct 1 _t15 0  0 0 1
+arg1 struct 1 _t14 0  0 0 1
+arg2 = NULL
+0
+result struct 1 b 6  0 0 16
+arg1 struct 1 _t15 0  0 0 1
+arg2 = NULL
+0
+result struct 1 _t16 0  0 0 1
+arg1 struct 1 _t15 0  0 0 1
+arg2 = NULL
+0
+result struct 1 a 4  0 0 17
+arg1 struct 1 _t16 0  0 0 1
+arg2 = NULL
+23
+result struct 4  0  0 0 18
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 19
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 20
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 21
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 22
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 23
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 24
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 25
+arg1 = NULL
+arg2 = NULL
+17
+result struct 9 print 0  0 0 2
+arg1 = NULL
+arg2 = NULL
+0
+result struct 1 _t17 0  0 0 1
+arg1 struct 10  0  0 0 -48
+arg2 = NULL
+1
+result struct 1 _t18 -0  0 0 1
+arg1 struct 1 c 8  0 0 18
+arg2 struct 1 d 10  0 0 19
+3
+result struct 1 _t18 -0  0 0 1
+arg1 struct 1 _t18 -0  0 0 1
+arg2 struct 4  -1  0 -2 26
+2
+result struct 1 _t19 0  0 0 1
+arg1 struct 1 a 4  0 0 20
+arg2 struct 1 b 6  0 0 21
+3
+result struct 1 _t20 0  0 0 2
+arg1 struct 1 _t18 -0  0 0 1
+arg2 struct 1 _t19 0  0 0 1
+3
+result struct 1 _t20 0  0 0 2
+arg1 struct 1 _t20 0  0 0 2
+arg2 struct 4  -1  0 -2 27
+3
+result struct 1 b 6  0 0 22
+arg1 struct 1 b 6  0 0 22
+arg2 struct 4  -1  0 -2 28
+5
+result struct 1 _t21 0  0 0 2
+arg1 struct 1 _t20 0  0 0 2
+arg2 struct 1 b 6  0 0 23
+0
+result struct 1 _t22 0  0 0 2
+arg1 struct 1 _t21 0  0 0 2
+arg2 = NULL
+0
+result struct 1 b 6  0 0 24
+arg1 struct 1 _t22 0  0 0 2
+arg2 = NULL
+0
+result struct 1 _t23 0  0 -1216812900 2
+arg1 struct 1 _t22 0  0 1075838976 2
+arg2 = NULL
+0
+result struct 1 a 4  0 165018448 25
+arg1 struct 1 _t23 0  0 0 2
+arg2 = NULL
+23
+result struct 4  0  0 165021108 29
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  1 1 30
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 31
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 -1216812900 32
+arg1 = NULL
+arg2 = NULL
+17
+result struct 9 print 2.122e-314  180 0 3
+arg1 = NULL
+arg2 = NULL
+0
+result struct 1 _t24 0  0 0 2
+arg1 struct 10  0  0 0 -48
+arg2 = NULL
+0
+result struct 1 _t25 4  0 0 2
+arg1 struct 4  4  7 0 33
+arg2 = NULL
+0
+result struct 1 a 4  0 165018448 26
+arg1 struct 1 _t25 4  0 14 2
+arg2 = NULL
+0
+result struct 1 _t26 5  0 23 2
+arg1 struct 4  5  1 165017792 34
+arg2 = NULL
+0
+result struct 1 b 6  0 165021504 27
+arg1 struct 1 _t26 5  0 0 2
+arg2 = NULL
+0
+result struct 1 _t27 7  0 165019288 2
+arg1 struct 4  7  168 165024240 35
+arg2 = NULL
+0
+result struct 1 c 8  0 0 28
+arg1 struct 1 _t27 7  0 165024984 2
+arg2 = NULL
+0
+result struct 1 _t28 8  0 165025304 2
+arg1 struct 4  8  160 165026544 36
+arg2 = NULL
+0
+result struct 1 d 10  0 62 29
+arg1 struct 1 _t28 8  0 0 2
+arg2 = NULL
+1
+result struct 1 _t29 0  0 0 2
+arg1 struct 1 a 4  0 0 30
+arg2 struct 1 b 6  0 0 31
+1
+result struct 1 _t30 0  0 0 3
+arg1 struct 1 _t29 0  0 0 2
+arg2 struct 1 c 8  0 0 32
+1
+result struct 1 _t31 0  0 0 3
+arg1 struct 1 _t30 0  0 0 3
+arg2 struct 1 d 10  0 0 33
+0
+result struct 1 _t32 0  0 0 3
+arg1 struct 1 _t31 0  0 0 3
+arg2 = NULL
+0
+result struct 1 e 35  0 0 34
+arg1 struct 1 _t32 0  0 0 3
+arg2 = NULL
+1
+result struct 1 _t33 0  0 0 3
+arg1 struct 1 c 8  0 0 35
+arg2 struct 1 d 10  0 0 36
+1
+result struct 1 _t34 0  0 0 3
+arg1 struct 1 b 6  0 0 37
+arg2 struct 1 _t33 0  0 0 3
+1
+result struct 1 _t35 0  0 0 3
+arg1 struct 1 a 4  0 0 38
+arg2 struct 1 _t34 0  0 0 3
+0
+result struct 1 _t36 0  0 0 3
+arg1 struct 1 _t35 0  0 0 3
+arg2 = NULL
+0
+result struct 1 e 35  0 0 39
+arg1 struct 1 _t36 0  0 0 3
+arg2 = NULL
+3
+result struct 1 a 4  0 0 40
+arg1 struct 1 a 4  0 0 40
+arg2 struct 4  -1  0 -2 37
+1
+result struct 1 _t37 0  0 0 3
+arg1 struct 1 a 4  0 0 41
+arg2 struct 1 b 6  0 0 42
+0
+result struct 1 _t38 0  0 0 3
+arg1 struct 1 _t37 0  0 0 3
+arg2 = NULL
+0
+result struct 1 e 35  0 0 43
+arg1 struct 1 _t38 0  0 0 3
+arg2 = NULL
+1
+result struct 1 _t39 -0  0 0 3
+arg1 struct 1 a 4  0 0 44
+arg2 struct 1 b 6  0 0 45
+3
+result struct 1 _t39 -0  0 0 3
+arg1 struct 1 _t39 -0  0 0 3
+arg2 struct 4  -1  0 -2 38
+0
+result struct 1 _t40 -0  0 0 4
+arg1 struct 1 _t39 -0  0 0 3
+arg2 = NULL
+0
+result struct 1 e 35  0 0 46
+arg1 struct 1 _t40 -0  0 0 4
+arg2 = NULL
+23
+result struct 4  0  0 0 39
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 40
+arg1 = NULL
+arg2 = NULL
+17
+result struct 9 print 0  0 0 4
+arg1 = NULL
+arg2 = NULL
+0
+result struct 1 _t41 0  0 0 4
+arg1 struct 10  0  0 0 -48
+arg2 = NULL
+3
+result struct 1 _t42 0  0 0 4
+arg1 struct 1 a 4  0 0 47
+arg2 struct 1 b 6  0 0 48
+4
+result struct 1 _t43 -nan  0 0 4
+arg1 struct 1 c 8  0 0 49
+arg2 struct 1 d 10  0 0 50
+5
+result struct 1 _t44 0  0 0 4
+arg1 struct 1 _t43 -nan  0 0 4
+arg2 struct 1 e 35  0 0 51
+2
+result struct 1 _t45 0  0 0 4
+arg1 struct 1 _t42 0  0 0 4
+arg2 struct 1 _t44 0  0 0 4
+0
+result struct 1 _t46 0  0 0 4
+arg1 struct 1 _t45 0  0 0 4
+arg2 = NULL
+0
+result struct 1 e 35  0 0 52
+arg1 struct 1 _t46 0  0 0 4
+arg2 = NULL
+23
+result struct 4  0  0 0 41
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 42
+arg1 = NULL
+arg2 = NULL
+17
+result struct 9 print 0  0 0 5
+arg1 = NULL
+arg2 = NULL
+0
+result struct 1 _t47 0  0 0 4
+arg1 struct 10  0  0 0 -48
+arg2 = NULL
+5
+result struct 1 _t48 0  0 0 4
+arg1 struct 1 d 10  0 0 53
+arg2 struct 1 e 35  0 0 54
+4
+result struct 1 _t49 -nan  0 0 4
+arg1 struct 1 c 8  0 0 55
+arg2 struct 1 _t48 0  0 0 4
+2
+result struct 1 _t50 -nan  0 0 5
+arg1 struct 1 b 6  0 0 56
+arg2 struct 1 _t49 -nan  0 0 4
+3
+result struct 1 _t51 -nan  0 0 5
+arg1 struct 1 a 4  0 0 57
+arg2 struct 1 _t50 -nan  0 0 5
+0
+result struct 1 _t52 -nan  0 0 5
+arg1 struct 1 _t51 -nan  0 0 5
+arg2 = NULL
+0
+result struct 1 e 35  0 0 58
+arg1 struct 1 _t52 -nan  0 0 5
+arg2 = NULL
+23
+result struct 4  0  0 0 43
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 44
+arg1 = NULL
+arg2 = NULL
+17
+result struct 9 print 0  0 0 6
+arg1 = NULL
+arg2 = NULL
+0
+result struct 1 _t53 0  0 0 5
+arg1 struct 10  0  0 0 -48
+arg2 = NULL
+1
+result struct 1 _t54 -0  0 0 5
+arg1 struct 1 a 4  0 0 59
+arg2 struct 1 b 6  0 0 60
+3
+result struct 1 _t54 -0  0 1 5
+arg1 struct 1 _t54 -0  0 1 5
+arg2 struct 4  -1  0 -2 45
+1
+result struct 1 _t55 -0  0 1 5
+arg1 struct 1 c 8  0 -48 61
+arg2 struct 1 d 10  0 7 62
+3
+result struct 1 _t55 -0  0 -1216812900 5
+arg1 struct 1 _t55 -0  0 -1216812900 5
+arg2 struct 4  -1  0 -2 46
+4
+result struct 1 _t56 nan  0 -1216812900 5
+arg1 struct 1 _t54 -0  0 0 5
+arg2 struct 1 _t55 -0  0 0 5
+3
+result struct 1 _t56 nan  0 -1216812900 5
+arg1 struct 1 _t56 nan  0 -1216812900 5
+arg2 struct 4  -1  0 -2 47
+5
+result struct 1 _t57 0  0 -1216812900 5
+arg1 struct 1 _t56 nan  0 0 5
+arg2 struct 1 e 35  0 0 63
+0
+result struct 1 _t58 0  0 0 5
+arg1 struct 1 _t57 0  0 165034252 5
+arg2 = NULL
+0
+result struct 1 e 35  0 0 64
+arg1 struct 1 _t58 0  0 0 5
+arg2 = NULL
+23
+result struct 4  0  4 1 48
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 49
+arg1 = NULL
+arg2 = NULL
+17
+result struct 9 print 2.83089e-261  0 -1216812900 7
+arg1 = NULL
+arg2 = NULL
+0
+result struct 1 _t59 0  0 5 5
+arg1 struct 10  0  0 0 -48
+arg2 = NULL
+0
+result struct 1 _t60 0  0 0 6
+arg1 struct 1 a 4  0 8 65
+arg2 = NULL
+2
+result struct 1 a 4  0 0 66
+arg1 struct 1 a 4  0 165019032 67
+arg2 struct 4  1  0 20 50
+0
+result struct 1 _t61 0  0 0 6
+arg1 struct 1 b 6  0 165021600 68
+arg2 = NULL
+1
+result struct 1 b 6  0 23 69
+arg1 struct 1 b 6  0 0 70
+arg2 struct 4  1  0 165023960 51
+2
+result struct 1 _t62 -1  0 165024624 6
+arg1 struct 1 a 4  0 0 71
+arg2 struct 1 b 6  0 165025240 72
+0
+result struct 1 _t63 0  0 3 6
+arg1 struct 1 c 8  0 165019912 73
+arg2 = NULL
+2
+result struct 1 c 8  0 23 74
+arg1 struct 1 c 8  0 0 75
+arg2 struct 4  1  0 165023016 52
+1
+result struct 1 _t64 -2  0 165023640 6
+arg1 struct 1 _t62 -1  0 0 6
+arg2 struct 1 c 8  0 165034056 76
+0
+result struct 1 _t65 0  0 165035056 6
+arg1 struct 1 d 10  0 0 77
+arg2 = NULL
+1
+result struct 1 d 10  0 165036616 78
+arg1 struct 1 d 10  0 0 79
+arg2 struct 4  1  0 0 53
+2
+result struct 1 _t66 -2  0 112 6
+arg1 struct 1 _t64 -2  0 23 6
+arg2 struct 1 d 10  0 1 80
+23
+result struct 4  0  48 126 54
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 55
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 56
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 57
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 58
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 59
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 60
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 61
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 62
+arg1 = NULL
+arg2 = NULL
+23
+result struct 4  0  0 0 63
+arg1 = NULL
+arg2 = NULL
+17
+result struct 9 print 0  0 0 8
+arg1 = NULL
+arg2 = NULL
+0
+result struct 1 _t67 0  0 0 6
+arg1 struct 10  0  0 0 -48
+arg2 = NULL
