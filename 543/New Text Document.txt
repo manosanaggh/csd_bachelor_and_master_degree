@@ -1,0 +1,113 @@
+SVM
+
+
+val numCorrections = 20
+val convergenceTol = 1e-10
+val maxNumIterations = 50
+val regParam = 0.001
+
+val numCorrections = 20
+val convergenceTol = 1e-10
+val maxNumIterations = 70
+val regParam = 0.1
+
+val numCorrections = 20
+val convergenceTol = 1e-10
+val maxNumIterations = 34
+val regParam = 0.001 
+
+val numCorrections = 20
+val convergenceTol = 1e-10
+val maxNumIterations = 35
+val regParam = 0.001 (BEST)
+
+val numCorrections = 20
+val convergenceTol = 1e-5
+val maxNumIterations = 35
+val regParam = 0.001
+
+val numCorrections = 20
+val convergenceTol = 1e-1
+val maxNumIterations = 35
+val regParam = 0.001
+
+val numCorrections = 30
+val convergenceTol = 1e-10
+val maxNumIterations = 35
+val regParam = 0.001
+
+val numCorrections = 5
+val convergenceTol = 1e-10
+val maxNumIterations = 35
+val regParam = 0.001
+
+val numCorrections = 100
+val convergenceTol = 1e-10
+val maxNumIterations = 35
+val regParam = 0.001
+
+val numCorrections = 80
+val convergenceTol = 1e-10
+val maxNumIterations = 35
+val regParam = 0.001
+
+val numCorrections = 50
+val convergenceTol = 1e-10
+val maxNumIterations = 35
+val regParam = 0.001
+
+val numCorrections = 20
+val convergenceTol = 1e-10
+val maxNumIterations = 35
+val regParam = 0.000001
+
+val numCorrections = 20
+val convergenceTol = 1e-10
+val maxNumIterations = 135
+val regParam = 0.001
+
+val numCorrections = 20
+val convergenceTol = 1e-10
+val maxNumIterations = 235
+val regParam = 0.001
+
+
+
+
+
+linear regression
+
+
+
+
+
+decision trees regression with cross validation
+
+96 kako
+
+
+
+
+gradient boosted
+
+
+setMaxIter(10) Root Mean Squared Error (RMSE) on test data = 18.152876992526075
+
+setMaxIter(20) Root Mean Squared Error (RMSE) on test data = 18.565184481039196
+
+setMaxIter(30) Root Mean Squared Error (RMSE) on test data = 18.807143185834775
+
+setMaxIter(5) Root Mean Squared Error (RMSE) on test data = 17.84000048811943
+
+setMaxIter(2) Root Mean Squared Error (RMSE) on test data = 17.64764774228569
+
+setMaxIter(1) Root Mean Squared Error (RMSE) on test data = 17.591718586380846
+
+
+
+
+random forest
+
+setMaxCategories(4) Root Mean Squared Error (RMSE) on test data = 22.773959488256313
+
+setMaxCategories(10) Root Mean Squared Error (RMSE) on test data = 22.773959488256313
