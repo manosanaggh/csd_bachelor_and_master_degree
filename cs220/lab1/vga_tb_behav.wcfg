@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="vga_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_And_sv " />
+            <top_module name="glbl" />
+            <top_module name="vga_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999990268fs"></ZoomStartTime>
+      <ZoomEndTime time="1000001947fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="82"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/vga_tb/fileout" type="array">
+      <obj_property name="ElementShortName">fileout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fileout[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/hsync" type="logic">
+      <obj_property name="ElementShortName">hsync</obj_property>
+      <obj_property name="ObjectShortName">hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vsync" type="logic">
+      <obj_property name="ElementShortName">vsync</obj_property>
+      <obj_property name="ObjectShortName">vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/red" type="array">
+      <obj_property name="ElementShortName">red[3:0]</obj_property>
+      <obj_property name="ObjectShortName">red[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/green" type="array">
+      <obj_property name="ElementShortName">green[3:0]</obj_property>
+      <obj_property name="ObjectShortName">green[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/blue" type="array">
+      <obj_property name="ElementShortName">blue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">blue[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/pixel_valid" type="logic">
+      <obj_property name="ElementShortName">pixel_valid</obj_property>
+      <obj_property name="ObjectShortName">pixel_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/col" type="array">
+      <obj_property name="ElementShortName">col[9:0]</obj_property>
+      <obj_property name="ObjectShortName">col[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/row" type="array">
+      <obj_property name="ElementShortName">row[9:0]</obj_property>
+      <obj_property name="ObjectShortName">row[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/FRAME_HPIXELS" type="array">
+      <obj_property name="ElementShortName">FRAME_HPIXELS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRAME_HPIXELS[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/FRAME_HFPORCH" type="array">
+      <obj_property name="ElementShortName">FRAME_HFPORCH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRAME_HFPORCH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/FRAME_HSPULSE" type="array">
+      <obj_property name="ElementShortName">FRAME_HSPULSE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRAME_HSPULSE[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/FRAME_HBPORCH" type="array">
+      <obj_property name="ElementShortName">FRAME_HBPORCH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRAME_HBPORCH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/FRAME_MAX_HCOUNT" type="array">
+      <obj_property name="ElementShortName">FRAME_MAX_HCOUNT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRAME_MAX_HCOUNT[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/FRAME_VLINES" type="array">
+      <obj_property name="ElementShortName">FRAME_VLINES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRAME_VLINES[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/FRAME_VFPORCH" type="array">
+      <obj_property name="ElementShortName">FRAME_VFPORCH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRAME_VFPORCH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/FRAME_VSPULSE" type="array">
+      <obj_property name="ElementShortName">FRAME_VSPULSE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRAME_VSPULSE[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/FRAME_VBPORCH" type="array">
+      <obj_property name="ElementShortName">FRAME_VBPORCH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRAME_VBPORCH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/FRAME_MAX_VCOUNT" type="array">
+      <obj_property name="ElementShortName">FRAME_MAX_VCOUNT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRAME_MAX_VCOUNT[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/vsi/o_hsync" type="logic">
+      <obj_property name="ElementShortName">o_hsync</obj_property>
+      <obj_property name="ObjectShortName">o_hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/vsi/o_vsync" type="logic">
+      <obj_property name="ElementShortName">o_vsync</obj_property>
+      <obj_property name="ObjectShortName">o_vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/vsi/o_col" type="array">
+      <obj_property name="ElementShortName">o_col[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_col[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/vsi/o_row" type="array">
+      <obj_property name="ElementShortName">o_row[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_row[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vs/vsi/o_pix_valid" type="logic">
+      <obj_property name="ElementShortName">o_pix_valid</obj_property>
+      <obj_property name="ObjectShortName">o_pix_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vf/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#A52A2A</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vf/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vf/i_pix_valid" type="logic">
+      <obj_property name="ElementShortName">i_pix_valid</obj_property>
+      <obj_property name="ObjectShortName">i_pix_valid</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vf/i_col" type="array">
+      <obj_property name="ElementShortName">i_col[9:0]</obj_property>
+      <obj_property name="ObjectShortName">i_col[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vf/i_row" type="array">
+      <obj_property name="ElementShortName">i_row[9:0]</obj_property>
+      <obj_property name="ObjectShortName">i_row[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vf/o_red" type="array">
+      <obj_property name="ElementShortName">o_red[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_red[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vf/o_green" type="array">
+      <obj_property name="ElementShortName">o_green[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_green[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vf/o_blue" type="array">
+      <obj_property name="ElementShortName">o_blue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_blue[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

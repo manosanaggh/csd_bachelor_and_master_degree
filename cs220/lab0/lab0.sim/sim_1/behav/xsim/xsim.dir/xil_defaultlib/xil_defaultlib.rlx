@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Locker/PANEPISTIMIO/lab0/lab0.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Locker/PANEPISTIMIO/lab0_code/counter.sv,1572176278,systemVerilog,,D:/Locker/PANEPISTIMIO/lab0_code/lab0_top.sv,,counter,,,,,,,,
+D:/Locker/PANEPISTIMIO/lab0_code/lab0_tb.sv,1572176784,systemVerilog,,,,lab0_tb,,,,,,,,
+D:/Locker/PANEPISTIMIO/lab0_code/lab0_top.sv,1572176792,systemVerilog,,D:/Locker/PANEPISTIMIO/lab0_code/lab0_tb.sv,,lab0_top,,,,,,,,

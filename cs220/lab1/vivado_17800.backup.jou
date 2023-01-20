@@ -1,0 +1,141 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov  8 15:05:39 2019
+# Process ID: 17800
+# Current directory: D:/Locker/PANEPISTIMIO/lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3120 D:\Locker\PANEPISTIMIO\lab1\lab1.xpr
+# Log file: D:/Locker/PANEPISTIMIO/lab1/vivado.log
+# Journal file: D:/Locker/PANEPISTIMIO/lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Locker/PANEPISTIMIO/lab1/lab1.xpr
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+close_sim
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Or.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Or.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Less_than1.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Less_than1.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/And.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/And.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Not.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Not.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/mux2.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/mux2.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/adder1.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/adder1.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal3.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal3.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal1.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal1.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal2.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal2.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/RegSRst_1bit.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/RegSRst_1bit.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal4.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal4.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal5.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal5.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal6.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Equal6.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/RegSRst_10bit.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/RegSRst_10bit.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/mux2_0.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/mux2_0.sv
+close [ open D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Less_than2.sv w ]
+add_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Less_than2.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+save_wave_config {D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/vga_sync_inside.sv] -no_script -reset -force -quiet
+remove_files  D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/vga_sync_inside.sv
+file delete -force D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/vga_sync_inside.sv
+update_files -from_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/And_gate.sv -to_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/And.sv -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode All [current_project]
+add_files -norecurse {D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Not_gate.sv D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Or_gate.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Not.sv] -no_script -reset -force -quiet
+remove_files  D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Not.sv
+export_ip_user_files -of_objects  [get_files D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Or.sv] -no_script -reset -force -quiet
+remove_files  D:/Locker/PANEPISTIMIO/lab1/lab1.srcs/sources_1/new/Or.sv
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+run 1000000000nS
+run 1000000000ns
+close_sim
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+run 1000000ns
+run 1000000000ns
+close_sim
+launch_simulation
+open_wave_config D:/Locker/PANEPISTIMIO/lab1/vga_tb_behav.wcfg
+source vga_tb.tcl
+run 1000000000ns
+close_sim

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Locker/PANEPISTIMIO/lab1_code/vga_frame.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_frame
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Locker/PANEPISTIMIO/lab1_code/vga_maze_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_maze_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Locker/PANEPISTIMIO/lab1_code/vga_sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Locker/PANEPISTIMIO/lab1_code/vga_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_tb

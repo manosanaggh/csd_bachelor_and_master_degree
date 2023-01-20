@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../lab3_code/debouncer.sv" \
+"../../../../../lab3_code/maze_controller.sv" \
+"../../../../../lab3_code/rom.sv" \
+"../../../../../lab3_code/rom_dp.sv" \
+"../../../../../lab3_code/vga_frame.sv" \
+"../../../../../lab3_code/vga_maze_top.sv" \
+"../../../../../lab3_code/vga_sync.sv" \
+"../../../../../lab3_code/vga_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

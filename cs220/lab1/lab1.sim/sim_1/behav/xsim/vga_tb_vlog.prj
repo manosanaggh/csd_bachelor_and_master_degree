@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../lab1_code/vga_frame.sv" \
+"../../../../../lab1_code/vga_maze_top.sv" \
+"../../../../../lab1_code/vga_sync.sv" \
+"../../../../../lab1_code/vga_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

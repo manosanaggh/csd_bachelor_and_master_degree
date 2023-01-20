@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Locker/PANEPISTIMIO/lab1/lab1.sim/sim_1/behav/xsim/glbl.v,1544155482,verilog,,,,glbl,,,,,,,,
+D:/Locker/PANEPISTIMIO/lab1_code/vga_frame.sv,1572177424,systemVerilog,,D:/Locker/PANEPISTIMIO/lab1_code/vga_maze_top.sv,,vga_frame,,,,,,,,
+D:/Locker/PANEPISTIMIO/lab1_code/vga_maze_top.sv,1572177482,systemVerilog,,D:/Locker/PANEPISTIMIO/lab1_code/vga_sync.sv,,vga_maze_top,,,,,,,,
+D:/Locker/PANEPISTIMIO/lab1_code/vga_sync.sv,1573820372,systemVerilog,,D:/Locker/PANEPISTIMIO/lab1_code/vga_tb.sv,,vga_sync,,,,,,,,
+D:/Locker/PANEPISTIMIO/lab1_code/vga_tb.sv,1572971934,systemVerilog,,,,vga_tb,,,,,,,,

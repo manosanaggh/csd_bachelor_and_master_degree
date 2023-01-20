@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="vga_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="vga_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="11124fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="197"></NameColumnWidth>
+      <ValueColumnWidth column_width="197"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/vga_tb/vga0/vc/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/i_control" type="logic">
+      <obj_property name="ElementShortName">i_control</obj_property>
+      <obj_property name="ObjectShortName">i_control</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/i_up" type="logic">
+      <obj_property name="ElementShortName">i_up</obj_property>
+      <obj_property name="ObjectShortName">i_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/i_down" type="logic">
+      <obj_property name="ElementShortName">i_down</obj_property>
+      <obj_property name="ObjectShortName">i_down</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/i_left" type="logic">
+      <obj_property name="ElementShortName">i_left</obj_property>
+      <obj_property name="ObjectShortName">i_left</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/i_right" type="logic">
+      <obj_property name="ElementShortName">i_right</obj_property>
+      <obj_property name="ObjectShortName">i_right</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/o_rom_en" type="logic">
+      <obj_property name="ElementShortName">o_rom_en</obj_property>
+      <obj_property name="ObjectShortName">o_rom_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/o_rom_addr" type="array">
+      <obj_property name="ElementShortName">o_rom_addr[10:0]</obj_property>
+      <obj_property name="ObjectShortName">o_rom_addr[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/i_rom_data" type="array">
+      <obj_property name="ElementShortName">i_rom_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_rom_data[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/o_player_bcol" type="array">
+      <obj_property name="ElementShortName">o_player_bcol[5:0]</obj_property>
+      <obj_property name="ObjectShortName">o_player_bcol[5:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/o_player_brow" type="array">
+      <obj_property name="ElementShortName">o_player_brow[5:0]</obj_property>
+      <obj_property name="ObjectShortName">o_player_brow[5:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/i_exit_bcol" type="array">
+      <obj_property name="ElementShortName">i_exit_bcol[5:0]</obj_property>
+      <obj_property name="ObjectShortName">i_exit_bcol[5:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/i_exit_brow" type="array">
+      <obj_property name="ElementShortName">i_exit_brow[5:0]</obj_property>
+      <obj_property name="ObjectShortName">i_exit_brow[5:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/o_leds" type="array">
+      <obj_property name="ElementShortName">o_leds[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_leds[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/pressed" type="logic">
+      <obj_property name="ElementShortName">pressed</obj_property>
+      <obj_property name="ObjectShortName">pressed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/up_down" type="logic">
+      <obj_property name="ElementShortName">up_down</obj_property>
+      <obj_property name="ObjectShortName">up_down</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/count_i_control" type="array">
+      <obj_property name="ElementShortName">count_i_control[1:0]</obj_property>
+      <obj_property name="ObjectShortName">count_i_control[1:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/new_bcol" type="array">
+      <obj_property name="ElementShortName">new_bcol[5:0]</obj_property>
+      <obj_property name="ObjectShortName">new_bcol[5:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/curr_bcol" type="array">
+      <obj_property name="ElementShortName">curr_bcol[5:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_bcol[5:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/new_brow" type="array">
+      <obj_property name="ElementShortName">new_brow[5:0]</obj_property>
+      <obj_property name="ObjectShortName">new_brow[5:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/curr_brow" type="array">
+      <obj_property name="ElementShortName">curr_brow[5:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_brow[5:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/currentState" type="array">
+      <obj_property name="ElementShortName">currentState[3:0]</obj_property>
+      <obj_property name="ObjectShortName">currentState[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vga0/vc/nextState" type="array">
+      <obj_property name="ElementShortName">nextState[3:0]</obj_property>
+      <obj_property name="ObjectShortName">nextState[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
