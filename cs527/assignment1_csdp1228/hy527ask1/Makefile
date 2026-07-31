@@ -1,38 +1,47 @@
-make clean:
-	rm -rf *.out *.log
+# Standard make targets. The previous file used names like "make spin:",
+# which made make treat "make" as a real target and printed override warnings.
 
-make all:
-	gcc -pedantic -Wall -g -m32 src/main.c src/thread.c src/queue.c src/swtch.s -lrt
+CC = gcc
+CFLAGS = -pedantic -Wall -g -m32
+LDLIBS = -lrt
 
-make sieve:
-	gcc -pedantic -Wall -g -m32 src/sieve.c src/thread.c src/sem.c src/chan.c src/queue.c src/swtch.s -lrt
+.PHONY: clean all sieve sieve2 sieve4 sink sort spin spin2 spin3 debug run_and_log run
 
-make sieve2:
-	gcc -pedantic -Wall -g -m32 src/sieve2.c src/thread.c src/sem.c src/chan.c src/queue.c src/swtch.s -lrt
+clean:
+	rm -rf *.out *.log a.out
 
-make sieve4:
-	gcc -pedantic -Wall -g -m32 src/sieve4.c src/thread.c src/sem.c src/chan.c src/queue.c src/swtch.s -lrt
+all:
+	$(CC) $(CFLAGS) src/main.c src/thread.c src/queue.c src/swtch.s $(LDLIBS)
 
-make sink:
-	gcc -pedantic -Wall -g -m32 src/sink.c src/thread.c src/sem.c src/chan.c src/queue.c src/swtch.s -lrt
+sieve:
+	$(CC) $(CFLAGS) src/sieve.c src/thread.c src/sem.c src/chan.c src/queue.c src/swtch.s $(LDLIBS)
 
-make sort:
-	gcc -pedantic -Wall -g -m32 src/sort.c src/thread.c src/queue.c src/swtch.s -lrt
+sieve2:
+	$(CC) $(CFLAGS) src/sieve2.c src/thread.c src/sem.c src/chan.c src/queue.c src/swtch.s $(LDLIBS)
 
-make spin:
-	gcc -pedantic -Wall -g -m32 src/spin.c src/thread.c src/queue.c src/swtch.s -lrt
+sieve4:
+	$(CC) $(CFLAGS) src/sieve4.c src/thread.c src/sem.c src/chan.c src/queue.c src/swtch.s $(LDLIBS)
 
-make spin2:
-	gcc -pedantic -Wall -g -m32 src/spin2.c src/thread.c src/sem.c src/queue.c src/swtch.s -lrt
+sink:
+	$(CC) $(CFLAGS) src/sink.c src/thread.c src/sem.c src/chan.c src/queue.c src/swtch.s $(LDLIBS)
 
-make spin3:
-	gcc -pedantic -Wall -g -m32 src/spin3.c src/thread.c src/sem.c src/queue.c src/swtch.s -lrt
+sort:
+	$(CC) $(CFLAGS) src/sort.c src/thread.c src/queue.c src/swtch.s $(LDLIBS)
 
-make debug:
+spin:
+	$(CC) $(CFLAGS) src/spin.c src/thread.c src/queue.c src/swtch.s $(LDLIBS)
+
+spin2:
+	$(CC) $(CFLAGS) src/spin2.c src/thread.c src/sem.c src/queue.c src/swtch.s $(LDLIBS)
+
+spin3:
+	$(CC) $(CFLAGS) src/spin3.c src/thread.c src/sem.c src/queue.c src/swtch.s $(LDLIBS)
+
+debug:
 	gdb ./a.out
 
-make run_and_log:
+run_and_log:
 	./a.out > mylog.log
 
-make run:
+run:
 	./a.out

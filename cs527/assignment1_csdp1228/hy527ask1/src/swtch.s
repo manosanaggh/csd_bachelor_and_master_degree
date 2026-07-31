@@ -31,3 +31,6 @@ _thrstart:
 .globl	_ENDMONITOR
 __ENDMONITOR:
 _ENDMONITOR:
+
+# Mark stack as non-executable; otherwise modern linkers warn.
+.section .note.GNU-stack,"",@progbits
