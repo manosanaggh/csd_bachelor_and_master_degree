@@ -7,7 +7,6 @@
 
 extern void Thread_pause();
 extern void myprintf(char*);
-extern int critical;
 extern int Thread_self();
 extern void _thread_critical_enter(void);
 extern void _thread_critical_leave(void);

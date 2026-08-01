@@ -68,7 +68,6 @@ int thread_join_0_id = -1;
 int returned_from_join_and_queue_empty = 0;
 int waiting_join_id_after = -1;
 int prev_id = 0;
-int critical = 0;
 struct itimerval timer;
 
 /*
@@ -127,8 +126,9 @@ static int ready_empty(void)
 }
 
 /*
- * Real critical sections must block SIGVTALRM. A plain int flag is not enough:
- * the signal can arrive while malloc/queue pointers are half-updated.
+ * Real critical sections must block SIGVTALRM. The nested critical_depth
+ * counter lets helper functions call each other without accidentally
+ * unblocking the timer too early.
  *
  * These helpers are intentionally exported (not static) because queue.c uses
  * them too. That protects semaphore/join queues from preemption while their
@@ -139,7 +139,6 @@ void _thread_critical_enter(void)
 	if (timer_ready && critical_depth == 0)
 		sigprocmask(SIG_BLOCK, &new_set, NULL);
 	critical_depth++;
-	critical = 1;
 }
 
 void _thread_critical_leave(void)
@@ -147,7 +146,6 @@ void _thread_critical_leave(void)
 	if (critical_depth > 0)
 		critical_depth--;
 	if (critical_depth == 0) {
-		critical = 0;
 		if (timer_ready)
 			sigprocmask(SIG_UNBLOCK, &new_set, NULL);
 	}
@@ -278,7 +276,7 @@ void handler(int sig, siginfo_t *info, void *ucontext) {
 	if(eip < (uintptr_t)&_start || eip > (uintptr_t)&_etext){ return; }
 	if(((uintptr_t)_STARTMONITOR <= eip
 	&& eip  <= (uintptr_t)_ENDMONITOR)){ return; }
-	if(critical == 1){ return; }
+	if(critical_depth > 0){ return; }
 	if(!timer_ready || ready_empty()){ return; }
 	count_signals++;
 
