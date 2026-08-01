@@ -38,6 +38,7 @@ struct T{
 	struct Queue *join_q;
 	int state;
 	int exit_code;
+	int in_ready;
 };
 
 enum {
@@ -99,25 +100,45 @@ static int pending_stack_reap = -1;
 static int timer_ready = 0;
 static int critical_depth = 0;
 
+static int valid_tid(int tid);
+
 static void ready_push(int tid)
 {
-	if (tid <= 0 || tid > NUM_THREADS || ready_count == NUM_THREADS)
+	/*
+	 * Avoid duplicate/stale ready entries. Without this, Thread_join(0) can
+	 * mark the caller BLOCKED while an older copy of its id is still in ready_q;
+	 * the scheduler may then run the blocked joiner too early.
+	 */
+	if (!valid_tid(tid) || ready_count == NUM_THREADS)
 		return;
+	if (thread_table[tid - 1]->state != THREAD_RUNNABLE)
+		return;
+	if (thread_table[tid - 1]->in_ready)
+		return;
+
 	ready_q[ready_tail] = tid;
 	ready_tail = (ready_tail + 1) % NUM_THREADS;
 	ready_count++;
+	thread_table[tid - 1]->in_ready = 1;
 }
 
 static int ready_pop(void)
 {
 	int tid;
 
-	if (ready_count == 0)
-		return -1;
-	tid = ready_q[ready_head];
-	ready_head = (ready_head + 1) % NUM_THREADS;
-	ready_count--;
-	return tid;
+	/* Skip entries that became BLOCKED/EXITED after being enqueued. */
+	while (ready_count > 0) {
+		tid = ready_q[ready_head];
+		ready_head = (ready_head + 1) % NUM_THREADS;
+		ready_count--;
+
+		if (!valid_tid(tid))
+			continue;
+		thread_table[tid - 1]->in_ready = 0;
+		if (thread_table[tid - 1]->state == THREAD_RUNNABLE)
+			return tid;
+	}
+	return -1;
 }
 
 static int ready_empty(void)
@@ -287,8 +308,14 @@ void handler(int sig, siginfo_t *info, void *ucontext) {
 	thread_table[current - 1]->state = THREAD_RUNNABLE;
 	ready_push(current);
 	next = ready_pop();
-	if(!valid_tid(next))
+	if(!valid_tid(next)) {
+		thread_table[current - 1]->state = THREAD_RUNNING;
 		return;
+	}
+	if(next == current) {
+		thread_table[current - 1]->state = THREAD_RUNNING;
+		return;
+	}
 
 	running_thread_id = next;
 	thread_table[next - 1]->state = THREAD_RUNNING;
@@ -407,6 +434,7 @@ int Thread_new(int func(void *), void *args, size_t nbytes, ...){
 	t->func = func;
 	t->state = (thread_id == 1) ? THREAD_RUNNING : THREAD_RUNNABLE;
 	t->exit_code = 0;
+	t->in_ready = 0;
 
 	t->args = malloc(nbytes);
 	if(t->args == NULL || t->join_q == NULL) {
